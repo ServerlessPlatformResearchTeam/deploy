@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  openwhisk:
+    container_name: openwhisk_container
+    image: openwhisk/standalone
+    restart: always
+    environment:
+      TZ: "Asia/Seoul"
+    ports:
+      - "3232:3232"
+      - "3233:3233"
+    networks:
+      - mynet
+
+networks:
+  mynet:
+    driver: bridge
