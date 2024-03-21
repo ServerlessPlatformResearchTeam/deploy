@@ -3,7 +3,7 @@ version: "3"
 services:
   openwhisk:
     container_name: openwhisk_container
-    image: openwhisk/standalone
+    image: openwhisk/standalone:nightly
     restart: always
     environment:
       TZ: "Asia/Seoul"
