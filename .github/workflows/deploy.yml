@@ -9,8 +9,7 @@ permissions:
 
 jobs:
   deploy:
-    needs: build  
-    runs-on: ubuntu-latest  # 이 작업은 최신 Ubuntu 러너에서 실행됩니다.
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
